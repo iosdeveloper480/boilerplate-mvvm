@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="sf-ui-display-medium-58646be638f96.otf">
+            <string>SFUIDisplay-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SimpleTitleCVCell" id="U6b-Vx-4bR" customClass="SimpleTitleCVCell" customModule="Asmaky" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="456" height="120"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8qy-Ao-XJK">
+                    <rect key="frame" x="0.0" y="0.0" width="456" height="120"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fish" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QFt-SK-QTN">
+                            <rect key="frame" x="10" y="0.0" width="436" height="120"/>
+                            <fontDescription key="fontDescription" name="SFUIDisplay-Medium" family="SF UI Display" pointSize="15"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uxu-Tb-Ea8">
+                            <rect key="frame" x="0.0" y="0.0" width="456" height="120"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <connections>
+                                <action selector="didTapButton:" destination="U6b-Vx-4bR" eventType="touchUpInside" id="Eg3-da-Qlt"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="uxu-Tb-Ea8" secondAttribute="bottom" id="0QQ-6d-WjU"/>
+                        <constraint firstItem="QFt-SK-QTN" firstAttribute="leading" secondItem="8qy-Ao-XJK" secondAttribute="leading" constant="10" id="1tQ-BU-fs4"/>
+                        <constraint firstItem="uxu-Tb-Ea8" firstAttribute="leading" secondItem="8qy-Ao-XJK" secondAttribute="leading" id="K0r-fF-8F3"/>
+                        <constraint firstItem="QFt-SK-QTN" firstAttribute="top" secondItem="8qy-Ao-XJK" secondAttribute="top" id="Rzf-m6-hcF"/>
+                        <constraint firstAttribute="trailing" secondItem="QFt-SK-QTN" secondAttribute="trailing" constant="10" id="YEl-cy-NiE"/>
+                        <constraint firstAttribute="trailing" secondItem="uxu-Tb-Ea8" secondAttribute="trailing" id="ZLr-2v-ICZ"/>
+                        <constraint firstAttribute="bottom" secondItem="QFt-SK-QTN" secondAttribute="bottom" id="ePs-pJ-BuO"/>
+                        <constraint firstItem="uxu-Tb-Ea8" firstAttribute="top" secondItem="8qy-Ao-XJK" secondAttribute="top" id="t5L-eZ-F4C"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
+            <constraints>
+                <constraint firstItem="8qy-Ao-XJK" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" id="KNA-P3-ySx"/>
+                <constraint firstAttribute="bottom" secondItem="8qy-Ao-XJK" secondAttribute="bottom" id="PO5-V7-nXa"/>
+                <constraint firstItem="8qy-Ao-XJK" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="T79-En-x24"/>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="trailing" secondItem="8qy-Ao-XJK" secondAttribute="trailing" id="xsq-aR-Tvw"/>
+            </constraints>
+            <connections>
+                <outlet property="custombackgroundView" destination="8qy-Ao-XJK" id="47o-jZ-SHc"/>
+                <outlet property="titleLabel" destination="QFt-SK-QTN" id="sJc-nD-YYK"/>
+            </connections>
+            <point key="canvasLocation" x="230.43478260869566" y="154.01785714285714"/>
+        </collectionReusableView>
+    </objects>
+</document>

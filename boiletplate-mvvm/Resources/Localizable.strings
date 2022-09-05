@@ -1,0 +1,217 @@
+/* 
+ Localizable.strings
+ Asmaky
+ 
+ Created by EDS on 23/02/2022.
+ 
+ */
+
+"Home" = "Home";
+
+"page1Title" = "Request Ride";
+"page1Description" = "Request a ride get picked up by a nearby community driver";
+"page2Title" = "Confirm Your Driver";
+"page2Description" = "Huge drivers network helps you find comforable, safe and cheap ride";
+"page3Title" = "Track your ride";
+"page3Description" = "Know your driver in advance and be able to view current location in real time on the map";
+"getStarted" = "GET STARTED!";
+
+"welcome" = "Hi, nice to meet you!";
+"welcomeDescription" = "Choose your location to start find restaurants around you.";
+"UseCurrentLocation" = "Use current location";
+"SelectItManually" = "Select it manually";
+
+"app_name" = "FATIMA";
+"menu_home" = "Home";
+"addtocart" = "ADD TO CART";
+"tcurrency" = "%@ AED";
+"towdigits" = "%@";
+"minimumorder" = "Minimum orders is %@ AED";
+"currency" = "AED";
+"menu_orders" = "Orders";
+"ordersummary" = "Order Summary";
+"address" = "Address";
+"subtotal" = "Subtotal : ";
+"discount" = "Discount";
+"discount_" = "Discount : ";
+"delivery" = "Delivery :";
+"total" = "Total";
+"price" = "Price";
+"paymentmethod" = "Payment Method";
+"menu_about" = "About us";
+"loading" = "Loading...";
+"no_notifications" = "No notifications currently";
+"menu_notifications" = "Notifications";
+"balance" = "Balance";
+"recharge" = "Recharge";
+"no_transaction" = "No transactions yet";
+"savedaddress" = "Saved Addresses";
+"language" = "Language";
+"terms" = "Terms & Conditions";
+"contactus" = "Contact Us";
+"menu_logout" = "Log-out";
+"menu_settings" = "Settings";
+"no_address" = "Sorry,  you didn\'t add addresses";
+"menu_wallet" = "Wallet";
+"email" = "Email";
+"saddress" = "Address";
+"phone" = "Phone";
+"submit" = "Submit";
+"menu_join" = "Join Us";
+"addlogo" = "Add Your Logo";
+"addlicense" = "Add your Trade license ";
+"minumum" = "Min. :";
+"password" = "Password";
+"popular" = "Popular";
+"whatyoulike" = "What would like to have today?";
+"amount" = "Amount";
+"done" = "Done";
+"name" = "Name";
+"login" = "Login";
+"acceptterms" = "By clicking start, you agree to our Terms and Conditions ";
+"signup" = "Sign Up";
+"invalidphone" = "sorry, invalid phone number";
+"invalidname" = "please fill name field";
+"invalidemail" = "please enter valid email";
+"tap_back_again_to_exit" = "Please tap back again to exit the app.";
+"VerifyFragment" = "Verify";
+"SignUpFragment" = "Sign up";
+"codeerror" = "invalid verification code";
+"selectlanguage" = "Select app language";
+"english" = "English";
+"arabic" = "Arabic";
+"checkout" = "Check out";
+"apply" = "Apply";
+"remove" = "Remove";
+"currentaddress" = "Deliver to Current Location";
+"selectaddressmap" = "Deliver to Different Location";
+"selectfrommap" = "Choose location from the map";
+"specialrequest" = "Special Request";
+"optional" = "(Optional)";
+"upto" = "Choose up to %@ items";
+"limit" = "Maximum Choices is %@ items";
+"choosefromlist" = "Choose items from the list";
+"choose1" = "Choose 1 ";
+"viewcart" = "View Cart";
+"addressname" = "Address Name";
+"confirm" = "Confirm";
+"invalidcountry" = "sorry we aren\'t provide our services here now";
+"shopname" = "Shop / Restaurant name (English)";
+"shopname_ar" = "Shop / Restaurant name (Arabic)";
+"city" = "City";
+"ticket" = "Ticket";
+"cart" = "Cart";
+"orderdetails" = "Order Details";
+"detecting" = "Looking for your location";
+"outofdelivery" = "Out of Delivery Area";
+"currnetoutofdelivery" = "Sorry,selected address is out of delivery area";
+"changeaddress" = "Change address";
+"outofservices" = "Sorry our services not available for this region";
+"selectlocation" = "Select Location";
+"edit" = "Edit";
+"gender" = "Gender";
+"lbl_take_camera_picture" = "Take a picture";
+"lbl_choose_from_gallery" = "Choose from gallery";
+"toast_image_intent_null" = "Image picker option is missing!";
+"notselected" = "Not Selected";
+"rate" = "Rate Now !";
+"reviewsuccessfully" = "Review added successfully";
+"howitwas" = "How was your order ?";
+"comment" = "Your comments";
+"submitreview" = "Submit Review";
+"sorry_something_wrong" = "Sorry something went wrong, try again";
+"profile" = "Profile";
+"promocode" = "Add promo code";
+"verfiytxt" = "OTP code has been sent, enter it here";
+"pleaselogin" = "please login to enjoy all feature and have easy experience";
+"free" = "Free";
+"noneed" = "No Need";
+"tab1" = "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor";
+"tab2" = "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor";
+"tab3" = "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor";
+"nopartners" = "sorry we don't have any partners shops or restaurants near your selected address ";
+"cancel" = "Cancel";
+"start" = "Clear";
+"clearcart" = "you have orders in your basket from ( %@ ) do you want to clear it and start a new order?";
+"inputerror" = "please fill %@";
+"street" = "Street";
+"building" = "Building / Villa";
+"apartment" = "Apartment";
+"add_address" = "Add Address";
+"addresplaceholder" = "Home , Office , ..";
+"pleasselectagin" = "address not selected from map please select again ";
+"change" = "Change";
+"payment_erorr" = "Please check your payment method";
+"shop_erorr" = "Sorry, this shop can\'t receive your order now";
+"cancelled" = "Cancelled";
+"noorders" = "Sorry, you don't have previous orders ";
+"copy" = "Copy";
+"coupontxt1" = "Use code %@ ";
+"coupontxt2" = "Use code %@ to enjoy a Free Delivery  ";
+"cappedby" = " capped by %@ AED  ";
+"toenjoy1" = "to enjoy %@  discount ";
+"toenjoy2" = "to enjoy %@ AED discount ";
+"country" = "Country";
+"area" = "Area";
+"shop_type" = "Shop Type";
+"logoerror" = "Please upload your logo";
+"licenseerror" = "Please upload your license image";
+"requestadded" = "We have received your joining request we will contact with you soon";
+"view" = "View";
+
+"inprogress" = "You have orders in progress";
+"time_erorr" = "Please select time for delivery ";
+"quantityerror" = "Maximum quantity for this item to order is %@";
+
+
+"placed" = "Placed";
+"preparing" = "Preparing";
+"on_the_way" = "On the Way";
+"delivered" = "Delivered";
+"cancelled" = "Cancelled";
+
+
+"cash_on_delivery" = "Cash on Delivery";
+"credit_debit_card" = "Credit / Debit Card";
+"wallet" = "Wallet";
+
+
+"recharge_no" = "Recharge No";
+"order_no" = "Order No";
+"refund" = "Refund";
+
+
+"not_selected" = "Not Selected";
+"female" = "Female";
+"male" = "Male";
+
+
+"arabicname" = "Arabic Name";
+"englishname" = "English Name";
+"update" = "Update";
+
+"Please_enter_a_valid" = "Please enter a valid ";
+"please_enter" = "Please enter ";
+
+"OTP" = "Enter your OTP code here";
+
+"coupon" = "Coupon";
+"missing_name" = "Please enter name";
+"missing_phone" = "Please enter Mobile Number";
+"select_delivery_address" = "Select Delivery Address";
+"search" = "Search";
+"logouttext" = "Would you like to logout?";
+"unabletoupdatephoto" = "Unable to update photo.";
+"pleaseenteryourname" = "Please enter your name.";
+"yourreviewhassubmitted" = "Your review has submitted.";
+"pleaseaddrating" = "Please add rating.";
+"selectaddress" = "Select Address";
+"selectrestaurant" = "Select type";
+"selectcity" = "Select city";
+"selectcountry" = "Select country";
+"add_on_more_thanlimit" = "The quantity exceeded the limits for this item";
+"notes" = "Notes";
+"no" = "No";
+"yes" = "Yes";
+"norestaurant" = "sorry we don't have any partners shops or restaurants near your selected address";
+"nobookings" = "You don't have booking.";
