@@ -670,11 +670,13 @@ extension UIView {
         }
     }
     
-    public func snakeBar(_ input:String,_ success:Bool, duration: TTGSnackbarDuration = .middle) {
+    public func snakeBar(_ input:String,_ success:Bool, duration: TTGSnackbarDuration = .middle, animationType: TTGSnackbarAnimationType = .slideFromBottomBackToBottom) {
         let snackbar = TTGSnackbar(message: input, duration: duration)
+        snackbar.tag = 10000
         snackbar.messageTextColor = .white
         snackbar.messageTextAlign = .justified
         snackbar.shouldDismissOnSwipe = true
+        snackbar.animationType = animationType
         snackbar.onTapBlock = { snackbar in
             snackbar.dismiss()
         }
@@ -698,9 +700,12 @@ extension UIView {
         
         snackbar.messageTextFont = UIFont.init(name: AppFontName.regular, size: 16)!
         snackbar.show()
+        NotificationCenter.default.addObserver(self, selector: #selector(self.dismissSnakebar),
+                                               name: UIResponder.keyboardWillShowNotification, object: nil)
     }
     public func warningSnakeBar(_ input:String, duration: TTGSnackbarDuration = .middle, animationType: TTGSnackbarAnimationType = .slideFromBottomBackToBottom) {
         let snackbar = TTGSnackbar(message: input, duration: duration)
+        snackbar.tag = 10000
         snackbar.messageTextColor = .white
         snackbar.messageTextAlign = .justified
         snackbar.shouldDismissOnSwipe = true
@@ -723,12 +728,14 @@ extension UIView {
         
         snackbar.messageTextFont = UIFont.init(name: AppFontName.regular, size: 16)!
         snackbar.show()
+        NotificationCenter.default.addObserver(self, selector: #selector(self.dismissSnakebar),
+                                               name: UIResponder.keyboardWillShowNotification, object: nil)
     }
     public func snakeBar(_ input:String,
-                         with color: UIColor = UIColor.red,
-                         duration: TTGSnackbarDuration = .middle) {
+                         with color: UIColor = UIColor.red) {
         let snackbar = TTGSnackbar(message: input,
-                                   duration: duration)
+                                   duration: .middle)
+        snackbar.tag = 10000
         snackbar.messageTextColor = .white
         snackbar.messageTextAlign = .justified
         if LanguageManager.shared.currentLanguage == .ar {
@@ -736,7 +743,7 @@ extension UIView {
         } else {
             snackbar.messageTextAlign = .left
         }
-//        snackbar.duration = TTGSnackbarDuration(rawValue: Int(5))!
+        snackbar.duration = TTGSnackbarDuration(rawValue: Int(5))!
         self.isUserInteractionEnabled = false
         _ = Timer.scheduledTimer(withTimeInterval: 1,
                                  repeats: false) { timer in
@@ -749,6 +756,14 @@ extension UIView {
         snackbar.messageTextFont = UIFont.init(name: AppFontName.regular,
                                                size: 16)!
         snackbar.show()
+        NotificationCenter.default.addObserver(self, selector: #selector(self.dismissSnakebar),
+                                               name: UIResponder.keyboardWillShowNotification, object: nil)
+    }
+    @objc func dismissSnakebar() {
+        if let window = UIApplication.shared.windows.first,
+           let bar = window.viewWithTag(10000) as? TTGSnackbar {
+            bar.dismiss()
+        }
     }
     func roundCorners(corners: UIRectCorner,
                       radius: CGFloat) {
